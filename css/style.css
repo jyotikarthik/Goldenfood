@@ -110,14 +110,14 @@ h6,
 /* Increase font size and add shadow on hover */
 .navbar .navbar-nav .nav-link:hover {
     font-size: 1.1em; /* Increase font size on hover */
-    color: black;
+    color: grey;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
 }
 
 /* Increase font size and add shadow when the link is active */
 .navbar .navbar-nav .nav-link.active {
     font-size: 1.2em; /* Increase font size when active */
-    color: #111111;
+    color: #059c45;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow when active */
 }
 

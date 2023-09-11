@@ -31,6 +31,23 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
+
+            /* Initial styles for the navbar (transparent white background) */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white */
+        }
+        
+        /* Styles for the navbar when scrolling down (transparent white) */
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white on scroll */
+        }
+        
+        /* Styles for the navbar in mobile view (transparent white) */
+        @media (max-width: 991.98px) {
+            .navbar {
+                background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white in mobile view */
+            }
+        }
         @media (max-width: 767px) {
         /* Set a maximum width for the images on mobile */
         .product-item .img-fluid {
@@ -38,6 +55,15 @@
             height: auto;
         }
     }
+    .product-item {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    }
+    /* Custom CSS to change the hamburger icon color to grey */
+    .navbar-toggler-icon {
+        background-color: rgb(176, 170, 170) !important;
+    }
+    
     </style>
 </head>
 
@@ -70,12 +96,12 @@
         <!-- Navbar End -->
 
     <!-- Product Start -->
-    <div class="container-xxl bg-light my-6 py-6 pt-0" style="margin: 8rem 0;">
+    <div class="container-xxl bg-light my-6 py-6 pt-0" >
         <div class="container">
             
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                
-                <h1 class="display-6 mb-4">Explore The Tasty And Healthy Golden food Products</h1>
+                <br>
+                <H6 style="font-size: xx-large;" class="display-6 mb-4">Explore The Tasty And Healthy Golden food Products</H6>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -142,6 +168,21 @@
                     <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                         <div class="text-center p-4">
                             
+                            <h3 class="mb-3">Lamba Jamun</h3>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/lambajamun.jpeg" alt="">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            
                             <h3 class="mb-3">Rasgulla</h3>
                             
                         </div>
@@ -161,28 +202,14 @@
                             
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/miniRasgulla.jpeg" alt="">
+                            <img class="img-fluid" src="img/miniRasgulla.jpg" alt="">
                             <div class="product-overlay">
                                 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            
-                            <h3 class="mb-3">Lamba Jamun</h3>
-                            
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/lambajamun.jpeg" alt="">
-                            <div class="product-overlay">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                         <div class="text-center p-4">
@@ -192,6 +219,66 @@
                         </div>
                         <div class="position-relative mt-auto">
                             <img class="img-fluid" src="img/Rasmalai Patty.jpg" alt="">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            
+                            <h3 class="mb-3">Cham Cham</h3>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Chamcham-1.jpg" alt="">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            
+                            <h3 class="mb-3">Rajbhog</h3>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Rajbhog.jpeg" alt="">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            
+                            <h3 class="mb-3">Kesar Rajbhog</h3>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/rajbhog.jpg" alt="">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            
+                            <h3 class="mb-3">Bengali Mithai</h3>
+                            
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/bengali-mithai.jpeg" alt="">
                             <div class="product-overlay">
                                 
                             </div>
@@ -258,66 +345,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            
-                            <h3 class="mb-3">Cham Cham</h3>
-                            
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/Chamcham-1.jpg" alt="">
-                            <div class="product-overlay">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            
-                            <h3 class="mb-3">Rajbhog</h3>
-                            
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/Rajbhog.jpeg" alt="">
-                            <div class="product-overlay">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            
-                            <h3 class="mb-3">Kesar Rajbhog</h3>
-                            
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/Rajbhog Recipe (Kesar Rasgulla Recipe).jpeg" alt="">
-                            <div class="product-overlay">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            
-                            <h3 class="mb-3">Bengali Mithai</h3>
-                            
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/bengali-mithai.jpeg" alt="">
-                            <div class="product-overlay">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
             </div>
         </div>
@@ -356,21 +383,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <h4 class="text-light mb-4">Reach us on WhatsApp</h4>
                     <div class="row g-6">
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/happy.jpeg" alt="Image"> 
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph1.png" alt="Image">
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph2.jpeg" alt="Image">
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph3.jpeg" alt="Image">
-                        </div>
-                        
+                        <a href="https://api.whatsapp.com/send?phone=9987195018" class="btn btn-success rounded-pill py-3 px-5">Chat with us</a>
                     </div>
                 </div>
             </div>

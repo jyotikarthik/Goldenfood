@@ -33,7 +33,6 @@ h6,
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -110,7 +109,7 @@ h6,
 /* Increase font size and add shadow on hover */
 .navbar .navbar-nav .nav-link:hover {
     font-size: 1.1em; /* Increase font size on hover */
-    color: grey;
+    color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
 }
 
@@ -156,7 +155,6 @@ h6,
         opacity: 1;
     }
 }
-
 
 /*** Header ***/
 .header-carousel .owl-carousel-inner {
@@ -458,3 +456,8 @@ h6,
 .navbar-toggler-icon {
     color: black;
 } */
+/* Change the loading color to red */
+.owl-carousel.owl-loading .owl-item {
+    background-color: red;
+    /* You can also change other styles as needed */
+}

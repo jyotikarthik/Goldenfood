@@ -29,6 +29,26 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Initial styles for the navbar (transparent white background) */
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white */
+    }
+    
+    /* Styles for the navbar when scrolling down (transparent white) */
+    .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white on scroll */
+    }
+    
+    /* Styles for the navbar in mobile view (transparent white) */
+    @media (max-width: 991.98px) {
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.4) !important; /* Change opacity to 0.9 for transparent white in mobile view */
+        }
+    }
+    
+    </style>
+
 </head>
 
 <body>
@@ -39,7 +59,7 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn navbar-scroll" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-lg-0 px-lg-5 wow fadeIn navbar-scroll" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
             <img id="logo" src="img/Golden Food.png">
         </a>
@@ -64,29 +84,6 @@
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/homebackground (2).png" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-lg-8">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/Celebrating Diwali with Paneer Makhani and a table full of sweets.png" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-lg-8">
-                                
-                                <h1 class="display-1 text-light mb-4 animated slideInDown">Asli bikaneri swaad ka jaika</h1>
-                                <!-- <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -98,9 +95,19 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <!-- <p class="text-primary text-uppercase mb-2">Our Services</p> -->
-                    <h1 class="display-6 mb-4">Our services</h1>
-                    
+                    <h1 class="display-6 mb-4">what do we offer for you</h1>
+                    <br>
                     <div class="row gy-5 gx-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-danger rounded-circle me-3">
+                                    <i class="fa fa-tools text-white"></i>
+                                    <!-- <i class="fa-solid fa-user text-white"></i> -->
+                                </div>
+                                <h5 class="mb-0">Manufacturing:</h5>
+                            </div>
+                            <span>As a manufacturer, we produce a wide variety of delectable sweets. What sets us apart is our absolute dedication to ensuring our sweets are made in extremely hygienic conditions and exceptional quality.</span>
+                        </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-danger rounded-circle me-3">
@@ -121,17 +128,15 @@
                             </div>
                             <span>With over 30 years of food expertise, we've helped numerous brands expand their market and enhance product quality as food consultants.</span>
                         </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="col-sm-6 wow fadeIn white-labeling" data-wow-delay="0.1s">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="flex-shrink-0 btn-square bg-danger rounded-circle me-3">
                                     <i class="fa fa-star text-white"></i>
                                 </div>
                                 <h5 class="mb-0">White labeling</h5>
                             </div>
-                            <span>We're manufacturers who produce our own sweets and offer white-labeling for other brands as well.
-                                </span>
-                        </div>
-                        
+                            <span class="ml-lg-3 ml-0 mt-2">We're manufacturers who produce our own sweets and offer white-labeling for other brands as well.</span>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -149,7 +154,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 
-                <h1 class="display-6 mb-4">Our Client's Review</h1>
+                <h1 class="display-6 mb-4">Our Clients</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item bg-white rounded p-4">
@@ -160,7 +165,7 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"Golden Foods, you've been our white-labeling savior! Thanks for helping Ghasitaram deliver lip-smacking goodness with style."</p>
+                    
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
@@ -170,7 +175,7 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"Golden Foods' white labeling expertise has been a game-changer for A1 Chips, enabling us to offer an expanded range of premium snacks with unmatched quality."</p>
+                    
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
@@ -180,7 +185,7 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"Working with Golden Foods has been a game-changer for Ariba Foods. Their food consulting expertise has significantly elevated our brand in the industry. Thanks to their invaluable guidance, we've reached new heights in quality and success. We wholeheartedly recommend their services!"</p>
+                    
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
@@ -190,7 +195,7 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"As a restaurant owner at Barbeque Nation, I'm highly impressed with Golden Foods' supply of healthy and delicious sweets. Their commitment to quality and taste has elevated our dessert offerings, delighting our customers. We appreciate Golden Foods for being a reliable partner in satisfying our patrons' sweet cravings with their exceptional products."</p>
+                    
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
@@ -200,7 +205,7 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"Golden Foods has been an invaluable partner. Their white-labeling services have not only maintained the high quality of our products but have also helped us expand our brand reach. Their expertise and dedication are truly remarkable. Thank you, Golden Foods, for your outstanding support in growing our business!"</p>
+                    
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
@@ -210,9 +215,10 @@
                             
                         </div>
                     </div>
-                    <p class="mb-0">"Golden Foods has played a pivotal role in our food brand's growth. Their food consulting services have greatly enhanced our products and market reach. Their team's expertise and commitment have been instrumental in our achievements. We extend our heartfelt gratitude to Golden Foods for their unwavering support!"</p>
+                    
                 </div>
             </div>
+            <br>
         </div>
     </div>
     <!-- Testimonial End -->
@@ -223,7 +229,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Shop Address</h4>
+                    <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Golden food
                         G-30
                         RIICO Industrial Area
@@ -249,21 +255,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <h4 class="text-light mb-4">Reach us on WhatsApp</h4>
                     <div class="row g-6">
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/happy.jpeg" alt="Image"> 
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph1.png" alt="Image">
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph2.jpeg" alt="Image">
-                        </div>
-                        <div class="col-6 mb-2">
-                            <img class="img-fluid bg-light rounded p-1" src="img/ph3.jpeg" alt="Image">
-                        </div>
-                        
+                        <a href="https://api.whatsapp.com/send?phone=9987195018" class="btn btn-success rounded-pill py-3 px-5">Chat with us</a>
                     </div>
                 </div>
             </div>
